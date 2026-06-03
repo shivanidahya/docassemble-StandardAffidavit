@@ -1,0 +1,30 @@
+[build-system]
+requires = [
+    "setuptools>=80.9.0",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docassemble.StandardAffidavit"
+version = "1.0"
+description = "Generic Affidavit"
+readme = "README.md"
+authors = [
+    { name = "Suffolk LIT Lab Fellow", email = "litlab@su.suffolk.edu" },
+]
+dependencies = [
+    "docassemble.ALAnyState @ git+https://github.com/SuffolkLITLab/docassemble-ALAnyState.git@main",
+    "docassemble.AssemblyLine @ git+https://github.com/SuffolkLITLab/docassemble-AssemblyLine.git@main",
+]
+license = "MIT"
+license-files = [
+    "LICENSE",
+]
+
+[project.urls]
+Homepage = "https://courtformsonline.org"
+
+[tool.setuptools.packages.find]
+where = [
+    ".",
+]
